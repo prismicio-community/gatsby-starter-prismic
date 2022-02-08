@@ -1,54 +1,80 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Gatsby Prismic starter
 
-## 🚀 Quick start
+This [Gatsby](https://www.gatsbyjs.com/) starter gets you started with [Prismic](https://prismic.io/), the Headless Website Builder.
 
-1.  **Create a Gatsby site.**
+## 🚀 Quick Start
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+How you get started depends on where you are at in your project:
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+<details>
+<summary>
+  <strong>I don't have a Prismic repository and would like to create one.</strong>
+</summary>
 
-2.  **Start developing.**
+1. **Create a Gatsby site.**
 
-    Navigate into your new site’s directory and start it up.
+   Use the Prismic CLI to create a new Prismic repository and Gatsby project in one command.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+   ```sh
+   npx prismic-cli@latest theme --theme-url https://github.com/prismicio-community/gatsby-starter-prismic
+   ```
 
-3.  **Open the code and start customizing!**
+   This will create a new Prismic repository with a minimal Custom Type called Page.
 
-    Your site is now running at http://localhost:8000!
+2. **Configure the starter.**
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+   Create a `.env` file with your Prismic repository name, Custom Types API token, and Access Token (optional).
 
-4.  **Learn more**
+   See `.env.example` for an example file with instructions on how to create your tokens.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+3. **Start developing.**
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+   In your project, start the Gatsby development server.
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+   ```sh
+   npm run develop
+   ```
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+You can delete the `/customtypes` directory a the root of the project at this point.
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Have fun developing!
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+</details>
 
-## 🚀 Quick start (Gatsby Cloud)
+<details>
+<summary>
+  <strong>I have a Prismic repository already.</strong>
+</summary>
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+1. **Create a Gatsby site.**
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+   Use the Gatsby CLI to create a new Gatsby project. Replace `<directory-name>` with the name of the directory you would like the CLI to create.
+
+   ```sh
+   npx gatsby-cli@latest new <directory-name> prismicio-community/gatsby-starter-prismic
+   ```
+
+2. **Configure the starter.**
+
+   Create a `.env` file with your Prismic repository name, Custom Types API token, and Access Token (optional).
+
+   See `.env.example` for an example file with instructions on how to create your tokens.
+
+3. **Start developing.**
+
+   In your project, start the Gatsby development server.
+
+   ```sh
+   npm run develop
+   ```
+
+You can delete the `/customtypes` directory a the root of the project at this point.
+
+Have fun developing!
+
+</details>
+
+## Documentation
+
+**Gatsby Documentation**: https://www.gatsbyjs.com/docs
+**Prismic Documentation**: https://prismic.io/docs/technologies/gatsby
