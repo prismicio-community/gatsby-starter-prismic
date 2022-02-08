@@ -16,18 +16,20 @@ import { withPrismicPreview } from "gatsby-plugin-prismic-previews";
 import { PrismicRichText } from "@prismicio/react";
 import { isFilled } from "@prismicio/helpers";
 
-const PageTemplate = ({ data }) => (
-  <main>
-    {data.prismicPage.data.title.text && (
-      <h1>{data.prismicPage.data.title.text}</h1>
-    )}
-    {isFilled.richText(data.prismicPage.data.content) && (
-      <article>
-        <PrismicRichText field={data.prismicPage.data.content} />
-      </article>
-    )}
-  </main>
-);
+const PageTemplate = ({ data }) => {
+  const page = data.prismicPage;
+
+  return (
+    <main>
+      {page.data.title.text && <h1>{page.data.title.text}</h1>}
+      {isFilled.richText(page.data.content.richText) && (
+        <article>
+          <PrismicRichText field={page.data.content.richText} />
+        </article>
+      )}
+    </main>
+  );
+};
 
 /**
  * When a Prismic preview session is active, `withPrismicPreview` will
