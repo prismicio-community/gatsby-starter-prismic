@@ -86,8 +86,6 @@ Have fun!
 
 ## Documentation
 
-- **Gatsby**<br/>Learn how to use Gatsby here: <https://www.gatsbyjs.com/docs>
-
-- **Prismic**<br/>Learn how to use Prismic here: <https://prismic.io/docs>
-
-- **Prismic with Gatsby**<br/>Learn how to use Prismic with Gatsby: <https://prismic.io/docs/technologies/gatsby>
+- **Gatsby**: <https://www.gatsbyjs.com/docs>
+- **Prismic**: <https://prismic.io/docs>
+- **Prismic with Gatsby**: <https://prismic.io/docs/technologies/gatsby>
