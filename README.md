@@ -1,6 +1,10 @@
-# Gatsby Prismic starter
+# gatsby-starter-prismic
 
 This [Gatsby](https://www.gatsbyjs.com/) starter gets you started with [Prismic](https://prismic.io/), the Headless Website Builder.
+
+- 🧩 Source content from Prismic using [`gatsby-source-prismic`](https://github.com/prismicio/prismic-gatsby/tree/main/packages/gatsby-source-prismic)
+- 👁️ Preview draft content using [`gatsby-plugin-prismic-previews`](https://github.com/prismicio/prismic-gatsby/tree/main/packages/gatsby-plugin-prismic-previews)
+- 🖼 Display content using [`@prismicio/react`](https://github.com/prismicio/prismic-react) with help from [`@prismicio/helpers`](https://github.com/prismicio/prismic-helpers)
 
 ## 🚀 Quick Start
 
@@ -76,5 +80,5 @@ Have fun developing!
 
 ## Documentation
 
-**Gatsby Documentation**: https://www.gatsbyjs.com/docs
-**Prismic Documentation**: https://prismic.io/docs/technologies/gatsby
+- **Gatsby Documentation**: https://www.gatsbyjs.com/docs
+- **Prismic Documentation**: https://prismic.io/docs/technologies/gatsby
