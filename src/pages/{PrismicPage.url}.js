@@ -13,7 +13,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { withPrismicPreview } from "gatsby-plugin-prismic-previews";
-import { PrismicText, PrismicRichText } from "@prismicio/react";
+import { PrismicRichText } from "@prismicio/react";
 import { isFilled } from "@prismicio/helpers";
 
 const PageTemplate = ({ data }) => (
