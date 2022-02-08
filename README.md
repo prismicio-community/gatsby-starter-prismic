@@ -2,9 +2,13 @@
 
 This [Gatsby](https://www.gatsbyjs.com/) starter gets you started with [Prismic](https://prismic.io/), the Headless Website Builder.
 
-- 🧩 Source content from Prismic using [`gatsby-source-prismic`](https://github.com/prismicio/prismic-gatsby/tree/main/packages/gatsby-source-prismic)
-- 👁️ Preview draft content using [`gatsby-plugin-prismic-previews`](https://github.com/prismicio/prismic-gatsby/tree/main/packages/gatsby-plugin-prismic-previews)
-- 🖼 Display content using [`@prismicio/react`](https://github.com/prismicio/prismic-react) with help from [`@prismicio/helpers`](https://github.com/prismicio/prismic-helpers)
+**Features**
+
+- Source content from Prismic using [`gatsby-source-prismic`](https://github.com/prismicio/prismic-gatsby/tree/main/packages/gatsby-source-prismic)
+- Preview draft content using [`gatsby-plugin-prismic-previews`](https://github.com/prismicio/prismic-gatsby/tree/main/packages/gatsby-plugin-prismic-previews)
+- Display content using [`@prismicio/react`](https://github.com/prismicio/prismic-react) with help from [`@prismicio/helpers`](https://github.com/prismicio/prismic-helpers)
+
+This starter is intentionally minimal. Add other packages and Gatsby plugins dependning on your needs.
 
 ## 🚀 Quick Start
 
@@ -39,7 +43,7 @@ How you get started depends on where you are at in your project:
    npm run develop
    ```
 
-You can delete the `/customtypes` directory a the root of the project at this point.
+You can delete the `customtypes` directory at the root of the project at this point.
 
 Have fun developing!
 
@@ -72,13 +76,20 @@ Have fun developing!
    npm run develop
    ```
 
-You can delete the `/customtypes` directory a the root of the project at this point.
+   **Note**: This starter queries for a Custom Type called Page in `src/pages/{PrismicPage.url}.js`. You can delete this file or modify it to fit your needs. You may see an error when starting Gatsby if you repository does not have a Page Custom Type.
 
-Have fun developing!
+You can delete the `customtypes` directory at the root of the project at this point.
 
 </details>
 
+Once you have your Gatsby project started, visit [Prismic's documentation](https://prismic.io/docs/technologies/gatsby) to learn how to query and display content.
+
+Have fun developing!
+
 ## Documentation
 
-- **Gatsby Documentation**: https://www.gatsbyjs.com/docs
-- **Prismic Documentation**: https://prismic.io/docs/technologies/gatsby
+- **Gatsby**<br/>Learn how to use Gatsby here: <https://www.gatsbyjs.com/docs>
+
+- **Prismic**<br/>Learn how to use Prismic here: <https://prismic.io/docs>
+
+- **Prismic with Gatsby**<br/>Learn how to use Prismic with Gatsby: <https://prismic.io/docs/technologies/gatsby>
