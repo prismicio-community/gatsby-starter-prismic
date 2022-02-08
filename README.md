@@ -6,7 +6,7 @@ This [Gatsby](https://www.gatsbyjs.com/) starter gets you started with [Prismic]
 - Preview draft content using [`gatsby-plugin-prismic-previews`](https://github.com/prismicio/prismic-gatsby/tree/main/packages/gatsby-plugin-prismic-previews)
 - Display content using [`@prismicio/react`](https://github.com/prismicio/prismic-react) with help from [`@prismicio/helpers`](https://github.com/prismicio/prismic-helpers)
 
-This starter is intentionally minimal. Add other packages and Gatsby plugins dependning on your needs.
+This starter is intentionally minimal. Add other packages and Gatsby plugins to suit your needs.
 
 ## 🚀 Quick Start
 
