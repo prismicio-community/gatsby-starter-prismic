@@ -2,8 +2,6 @@
 
 This [Gatsby](https://www.gatsbyjs.com/) starter gets you started with [Prismic](https://prismic.io/), the Headless Website Builder.
 
-**Features**
-
 - Source content from Prismic using [`gatsby-source-prismic`](https://github.com/prismicio/prismic-gatsby/tree/main/packages/gatsby-source-prismic)
 - Preview draft content using [`gatsby-plugin-prismic-previews`](https://github.com/prismicio/prismic-gatsby/tree/main/packages/gatsby-plugin-prismic-previews)
 - Display content using [`@prismicio/react`](https://github.com/prismicio/prismic-react) with help from [`@prismicio/helpers`](https://github.com/prismicio/prismic-helpers)
@@ -43,7 +41,7 @@ How you get started depends on where you are at in your project:
    npm run develop
    ```
 
-You can delete the `customtypes` directory at the root of the project at this point.
+You can delete the `custom_types` directory at the root of the project at this point.
 
 Have fun developing!
 
@@ -78,13 +76,13 @@ Have fun developing!
 
    **Note**: This starter queries for a Custom Type called Page in `src/pages/{PrismicPage.url}.js`. You can delete this file or modify it to fit your needs. You may see an error when starting Gatsby if you repository does not have a Page Custom Type.
 
-You can delete the `customtypes` directory at the root of the project at this point.
+You can delete the `custom_types` directory at the root of the project at this point.
 
 </details>
 
 Once you have your Gatsby project started, visit [Prismic's documentation](https://prismic.io/docs/technologies/gatsby) to learn how to query and display content.
 
-Have fun developing!
+Have fun!
 
 ## Documentation
 
