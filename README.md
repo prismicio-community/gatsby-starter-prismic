@@ -22,7 +22,7 @@ How you get started depends on where you are at in your project:
    Use the Prismic CLI to create a new Prismic repository and Gatsby project in one command.
 
    ```sh
-   npx prismic-cli@latest theme --theme-url https://github.com/prismicio-community/gatsby-starter-prismic --conf gatsby-config.js
+   npx prismic-cli@latest theme --theme-url https://github.com/prismicio-community/gatsby-starter-prismic
    ```
 
    This will create a new Prismic repository with a minimal Custom Type called Page.
