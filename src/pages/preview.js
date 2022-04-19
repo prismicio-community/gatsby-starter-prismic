@@ -17,6 +17,11 @@ const PreviewPage = ({ isPrismicPreview }) => {
   React.useEffect(() => {
     // If a visitor lands on this page and they did not come from the Prismic
     // Writing Room, redirect to the homepage.
+    //
+    // isPrismicPreview can be one of the following values:
+    // - `null`: The preview system is determining if a preview is active. The default value.
+    // - `false`: A preview session is not active. It is safe to manually redirect or display a message.
+    // - `true`: A preview session is active. The page will automatically redirect.
     if (isPrismicPreview === false) {
       navigate("/");
     }
