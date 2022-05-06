@@ -21,7 +21,10 @@ GatsbyLinkShim.displayName = "GatsbyLinkShim";
 
 // Adds a shared React Context for Prismic components and preview sessions.
 export const wrapRootElement = ({ element }) => (
-  <PrismicProvider internalLinkComponent={GatsbyLinkShim}>
+  <PrismicProvider
+    linkResolver={linkResolver}
+    internalLinkComponent={GatsbyLinkShim}
+  >
     <PrismicPreviewProvider repositoryConfigs={repositoryConfigs}>
       {element}
     </PrismicPreviewProvider>

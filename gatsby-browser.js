@@ -10,6 +10,7 @@ import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreviewProvider } from "gatsby-plugin-prismic-previews";
 
 import { repositoryConfigs } from "./src/prismicPreviews";
+import { linkResolver } from "./src/linkResolver";
 
 /**
  * An adapter to support Gatsby's `<Link>` component when using `<PrismicLink>`.
@@ -21,7 +22,10 @@ GatsbyLinkShim.displayName = "GatsbyLinkShim";
 
 // Adds a shared React Context for Prismic components and preview sessions.
 export const wrapRootElement = ({ element }) => (
-  <PrismicProvider internalLinkComponent={GatsbyLinkShim}>
+  <PrismicProvider
+    linkResolver={linkResolver}
+    internalLinkComponent={GatsbyLinkShim}
+  >
     <PrismicPreviewProvider repositoryConfigs={repositoryConfigs}>
       {element}
     </PrismicPreviewProvider>
