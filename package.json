@@ -10,16 +10,16 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@prismicio/helpers": "^2.2.0",
-    "@prismicio/react": "^2.1.2",
-    "gatsby": "^4.9.3",
-    "gatsby-plugin-image": "^2.9.1",
-    "gatsby-plugin-prismic-previews": "^5.2.5",
-    "gatsby-source-prismic": "^5.2.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@prismicio/helpers": "^2.3.6",
+    "@prismicio/react": "^2.5.0",
+    "gatsby": "^5.0.1",
+    "gatsby-plugin-image": "^3.0.0",
+    "gatsby-plugin-prismic-previews": "^6.0.0-alpha.19",
+    "gatsby-source-prismic": "^6.0.0-alpha.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.3"
   }
 }

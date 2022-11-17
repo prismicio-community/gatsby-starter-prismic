@@ -5,11 +5,7 @@
  * @see https://prismic.io/docs/technical-reference/gatsby-plugin-prismic-previews
  */
 
-import { componentResolverFromMap } from "gatsby-plugin-prismic-previews";
-
-import { linkResolver } from "./linkResolver";
-
-import PageTemplate from "./pages/{PrismicPage.url}";
+import * as React from "react";
 
 /**
  * Prismic preview configuration for each repository in your app. This set of
@@ -24,9 +20,8 @@ import PageTemplate from "./pages/{PrismicPage.url}";
 export const repositoryConfigs = [
   {
     repositoryName: process.env.GATSBY_PRISMIC_REPOSITORY_NAME,
-    linkResolver,
-    componentResolver: componentResolverFromMap({
-      page: PageTemplate,
-    }),
+    componentResolver: {
+      page: React.lazy(() => import("./pages/{PrismicPage.url}")),
+    },
   },
 ];

@@ -9,7 +9,6 @@
  * @see https://prismic.io/docs/technical-reference/gatsby-plugin-prismic-previews#withprismicunpublishedpreview
  */
 
-import * as React from "react";
 import { withPrismicUnpublishedPreview } from "gatsby-plugin-prismic-previews";
 
 const NotFoundPage = () => (

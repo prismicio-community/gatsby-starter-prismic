@@ -10,11 +10,11 @@
  * @see https://www.gatsbyjs.com/docs/reference/routing/file-system-route-api/
  */
 
-import * as React from "react";
 import { graphql } from "gatsby";
 import { withPrismicPreview } from "gatsby-plugin-prismic-previews";
-import { PrismicRichText } from "@prismicio/react";
-import { isFilled } from "@prismicio/helpers";
+import { SliceZone } from "@prismicio/react";
+
+import { components } from "../slices";
 
 const PageTemplate = ({ data }) => {
   const page = data.prismicPage;
@@ -22,11 +22,7 @@ const PageTemplate = ({ data }) => {
   return (
     <main>
       {page.data.title.text && <h1>{page.data.title.text}</h1>}
-      {isFilled.richText(page.data.content.richText) && (
-        <article>
-          <PrismicRichText field={page.data.content.richText} />
-        </article>
-      )}
+      <SliceZone slices={page.data.body} components={components} />
     </main>
   );
 };
@@ -50,8 +46,12 @@ export const query = graphql`
         title {
           text
         }
-        content {
-          richText
+        body {
+          ... on PrismicSlice {
+            id
+            slice_type
+          }
+          ...PrismicPageDataBodyText
         }
       }
     }
